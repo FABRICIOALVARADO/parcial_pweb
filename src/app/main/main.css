@@ -1,0 +1,541 @@
+:host {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #03045e 0%, #023e8a 55%, #0077b6 100%);
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  color: white;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(144, 224, 239, 0.15);
+  color: #ade8f4;
+  border: 1px solid rgba(173, 232, 244, 0.3);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hero-section h1 span {
+  color: #48cae4;
+}
+
+.hero-text {
+  color: #caf0f8;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.btn-primary-main {
+  background: #00b4d8;
+  color: white;
+  border-radius: 8px;
+  padding: 13px 24px;
+  font-weight: 600;
+}
+
+.btn-primary-main:hover {
+  background: #0096c7;
+  color: white;
+}
+
+.btn-outline-main {
+  border: 1px solid #90e0ef;
+  color: white;
+  border-radius: 8px;
+  padding: 13px 24px;
+  font-weight: 600;
+}
+
+.btn-outline-main:hover {
+  background: #90e0ef;
+  color: #03045e;
+}
+
+.hero-info {
+  display: flex;
+  gap: 45px;
+  margin-top: 35px;
+}
+
+.hero-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-info strong {
+  font-size: 25px;
+  color: #48cae4;
+}
+
+.hero-info span {
+  color: #ade8f4;
+  font-size: 13px;
+}
+
+.hero-card {
+  background: white;
+  color: #03045e;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  background: #caf0f8;
+  color: #0077b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-card h3 {
+  font-weight: 700;
+}
+
+.hero-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-card-item {
+  margin-top: 15px;
+  color: #023e8a;
+  font-weight: 500;
+}
+
+.hero-card-item i {
+  color: #0096c7;
+  margin-right: 8px;
+}
+
+
+/* SECCIONES */
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.section-title span {
+  color: #0077b6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-title h2 {
+  color: #03045e;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.section-title p {
+  color: #607d8b;
+  line-height: 1.7;
+}
+
+
+/* SERVICIOS */
+
+.service-card {
+  height: 100%;
+  padding: 30px;
+  background: white;
+  border: 1px solid #ade8f4;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 119, 182, 0.12);
+  border-color: #48cae4;
+}
+
+.service-icon {
+  width: 58px;
+  height: 58px;
+  background: #caf0f8;
+  color: #0077b6;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #03045e;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.service-card p {
+  color: #607d8b;
+  line-height: 1.6;
+}
+
+.service-card a {
+  color: #0077b6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* MÉDICOS */
+
+.doctors-section {
+  background: #f4fcfe;
+}
+
+.doctor-card {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 16px;
+  border: 1px solid #caf0f8;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 119, 182, 0.12);
+}
+
+.doctor-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #90e0ef, #00b4d8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.doctor-card h3 {
+  color: #03045e;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.doctor-card span {
+  color: #0077b6;
+  font-weight: 600;
+}
+
+.doctor-card p {
+  color: #607d8b;
+  font-size: 14px;
+  margin: 12px 0 18px;
+}
+
+.doctor-btn {
+  color: #0077b6;
+  border: 1px solid #90e0ef;
+  border-radius: 20px;
+  padding: 7px 20px;
+}
+
+.doctor-btn:hover {
+  background: #0077b6;
+  color: white;
+}
+
+
+/* PROMOCIONES */
+
+.promotion-card {
+  padding: 32px;
+  border-radius: 16px;
+  background: #f4fcfe;
+  border: 1px solid #ade8f4;
+  height: 100%;
+}
+
+.promotion-card.featured {
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  color: white;
+}
+
+.promotion-tag {
+  display: inline-block;
+  background: #caf0f8;
+  color: #0077b6;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.featured .promotion-tag {
+  background: white;
+  color: #0077b6;
+}
+
+.promotion-icon {
+  display: block;
+  color: #00b4d8;
+  font-size: 40px;
+  margin: 22px 0;
+}
+
+.promotion-card h3 {
+  color: #03045e;
+  font-weight: 700;
+}
+
+.featured h3 {
+  color: white;
+}
+
+.promotion-card p {
+  color: #607d8b;
+  line-height: 1.6;
+}
+
+.featured p {
+  color: #caf0f8;
+}
+
+.promotion-btn {
+  background: #03045e;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 18px;
+}
+
+.promotion-btn:hover {
+  background: #023e8a;
+  color: white;
+}
+
+
+/* RESEÑAS */
+
+.reviews-section {
+  background: #f4fcfe;
+}
+
+.review-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #caf0f8;
+  height: 100%;
+}
+
+.stars {
+  color: #00b4d8;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.review-card > p {
+  color: #546e7a;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.patient {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.patient-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #caf0f8;
+  color: #0077b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.patient strong {
+  display: block;
+  color: #03045e;
+}
+
+.patient small {
+  color: #78909c;
+}
+
+
+/* CONTACTO */
+
+.contact-section {
+  padding: 70px 0;
+  background: white;
+}
+
+.contact-box {
+  background: linear-gradient(135deg, #023e8a, #0077b6);
+  border-radius: 20px;
+  padding: 45px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-box span {
+  color: #90e0ef;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-box h2 {
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.contact-box p {
+  color: #caf0f8;
+  margin: 0;
+}
+
+.contact-btn {
+  background: white;
+  color: #0077b6;
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.contact-btn:hover {
+  background: #caf0f8;
+  color: #03045e;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  .hero-section {
+    padding: 70px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 44px;
+  }
+
+  .hero-card {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .section-padding {
+    padding: 65px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 37px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    text-align: center;
+  }
+
+  .hero-info {
+    gap: 20px;
+  }
+
+  .hero-info strong {
+    font-size: 21px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .contact-box {
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .hero-info {
+    gap: 12px;
+  }
+
+  .hero-info span {
+    font-size: 11px;
+  }
+
+  .hero-card {
+    padding: 25px;
+  }
+}

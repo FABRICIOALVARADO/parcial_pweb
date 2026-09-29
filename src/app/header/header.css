@@ -1,0 +1,80 @@
+:host {
+  display: block;
+}
+
+.header-nav {
+  background: #03045e;
+  padding: 14px 0;
+  box-shadow: 0 3px 15px rgba(3, 4, 94, 0.2);
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: #00b4d8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.brand-name {
+  display: block;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.brand-name + small {
+  color: #90e0ef;
+  font-size: 11px;
+}
+
+.nav-link {
+  color: #caf0f8 !important;
+  font-weight: 500;
+  margin: 0 7px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #48cae4 !important;
+}
+
+.btn-cita {
+  background: #00b4d8;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-cita:hover {
+  background: #0096c7;
+  color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 15px;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+  }
+
+  .btn-cita {
+    display: inline-block;
+    margin-top: 8px;
+  }
+}
