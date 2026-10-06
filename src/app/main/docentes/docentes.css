@@ -1,0 +1,6 @@
+:host { display: block; }
+.avatar { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: #fff; background: var(--grad); }
+.text-primary-x { color: var(--p5); }
+.nav-pills .nav-link { color: var(--ink-2); background: #fff; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; padding: 8px 20px; }
+.nav-pills .nav-link:hover { border-color: var(--p3); }
+.nav-pills .nav-link.active { background: var(--ink); color: #fff; border-color: var(--ink); }

@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   imports: [],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  templateUrl: './footer.html',
+  styleUrl: './footer.css'
 })
 export class FooterComponent {
-
+  logoOk = signal(true);
+  anio = new Date().getFullYear();
 }

@@ -1,0 +1,32 @@
+<section id="niveles" class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Tu ruta de aprendizaje</span>
+      <h2 class="h2">Niveles y modalidades</h2>
+      <p class="lead-x">Programas alineados al Marco Común Europeo de Referencia para las Lenguas (MCER).</p>
+    </div>
+    <div class="row g-4 mb-5">
+      @for (n of niveles; track n.n) {
+        <div class="col-md-4">
+          <div class="card-x" [class.card-dark]="n.dark">
+            <div class="mcer" [class.grad-text]="!n.dark">{{ n.m }}</div>
+            <h3>{{ n.n }}</h3>
+            <p>{{ n.x }}</p>
+            <span class="chip"><i class="bi bi-clock"></i> {{ n.d }}</span>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="row g-4">
+      @for (m of modalidades; track m.n) {
+        <div class="col-sm-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico"><i class="bi {{ m.i }}"></i></div>
+            <h3>{{ m.n }}</h3>
+            <p class="mb-0">{{ m.x }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

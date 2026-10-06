@@ -1,0 +1,38 @@
+<section id="contacto" class="sec">
+  <div class="container">
+    <div class="cta">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="eyebrow light">Arma tu matrícula</span>
+          <h2 class="h2 text-white">Elige tu plan y empieza hoy.</h2>
+          <p class="lead-cta">Selecciona tus preferencias y te enviamos directo a WhatsApp con tu solicitud lista, incluida la prueba de ubicación gratuita.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="formbox">
+            <label class="form-label">Idioma</label>
+            <select class="form-select mb-3" (change)="idioma.set(valor($event))">
+              @for (i of idiomas; track i) { <option>{{ i }}</option> }
+            </select>
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <label class="form-label">Modalidad</label>
+                <select class="form-select" (change)="modalidad.set(valor($event))">
+                  @for (m of modalidades; track m) { <option>{{ m }}</option> }
+                </select>
+              </div>
+              <div class="col-6">
+                <label class="form-label">Turno</label>
+                <select class="form-select" (change)="turno.set(valor($event))">
+                  @for (t of turnos; track t) { <option [selected]="t === 'Noche'">{{ t }}</option> }
+                </select>
+              </div>
+            </div>
+            <a [href]="wa()" target="_blank" rel="noopener" class="btn btn-brand w-100 btn-lg">
+              <i class="bi bi-whatsapp me-2"></i>Solicitar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

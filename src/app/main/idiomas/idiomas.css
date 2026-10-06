@@ -1,0 +1,4 @@
+:host { display: block; }
+.code { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-weight: 800; letter-spacing: .04em; color: #fff; background: var(--grad); }
+.go { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--soft); color: var(--ink); text-decoration: none; transition: .2s; }
+.go:hover { background: var(--ink); color: #fff; }

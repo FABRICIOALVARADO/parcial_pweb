@@ -1,0 +1,6 @@
+:host { display: block; }
+.pasos { padding-left: 20px; margin: 14px 0 0; color: var(--ink-2); }
+.pasos li { padding: 6px 0; }
+.pasos li::marker { color: var(--p5); font-weight: 700; }
+.servicio { display: flex; align-items: center; gap: 12px; height: 100%; padding: 16px 18px; border-radius: 14px; background: var(--soft); border: 1px solid var(--line); font-weight: 600; font-size: 14px; }
+.servicio i { color: var(--p5); font-size: 22px; }

@@ -1,0 +1,26 @@
+<section id="idiomas" class="sec sec-soft">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Oferta académica</span>
+      <h2 class="h2">Idiomas y programas</h2>
+      <p class="lead-x">Elige el idioma que impulsa tu carrera y el programa que mejor se adapta a tus metas.</p>
+    </div>
+    <div class="row g-4">
+      @for (i of idiomas; track i.n) {
+        <div class="col-md-6 col-lg-4">
+          <div class="card-x">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+              <div class="code">{{ i.f }}</div>
+              <a href="#contacto" class="go" aria-label="Más información"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+            <h3>{{ i.n }}</h3>
+            <p>{{ i.x }}</p>
+            <div class="d-flex flex-wrap gap-2">
+              @for (p of i.p; track p) { <span class="chip">{{ p }}</span> }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<section id="estudiantes" class="sec">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Información para estudiantes</span>
+      <h2 class="h2">Matrícula, horarios y beneficios</h2>
+      <p class="lead-x">Todo lo que necesitas saber antes de empezar.</p>
+    </div>
+
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4"><div class="card-x">
+        <div class="ico"><i class="bi bi-clock"></i></div><h3>Horarios</h3>
+        <ul class="checks">@for (h of horarios; track h) { <li>{{ h }}</li> }</ul>
+      </div></div>
+      <div class="col-lg-4"><div class="card-x">
+        <div class="ico"><i class="bi bi-list-ol"></i></div><h3>Proceso de matrícula</h3>
+        <ol class="pasos">@for (p of pasos; track p) { <li>{{ p }}</li> }</ol>
+      </div></div>
+      <div class="col-lg-4"><div class="card-x">
+        <div class="ico"><i class="bi bi-file-earmark-check"></i></div><h3>Requisitos</h3>
+        <ul class="checks">@for (r of requisitos; track r) { <li>{{ r }}</li> }</ul>
+      </div></div>
+    </div>
+
+    <div class="row g-3 mb-5">
+      @for (s of servicios; track s.t) {
+        <div class="col-6 col-lg-3"><div class="servicio"><i class="bi {{ s.i }}"></i>{{ s.t }}</div></div>
+      }
+    </div>
+
+    <div id="promociones" class="row g-4">
+      @for (p of promos; track p.t) {
+        <div class="col-md-4">
+          <div class="card-x" [class.card-dark]="p.dark">
+            <span class="chip mb-4">{{ p.tag }}</span>
+            <h3>{{ p.t }}</h3>
+            <p>{{ p.x }}</p>
+            <a href="#contacto" class="fw-semibold text-decoration-none" [class.text-white]="p.dark">Aprovechar <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

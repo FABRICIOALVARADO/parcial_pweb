@@ -1,0 +1,41 @@
+<section id="inicio" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="pill"><span class="dot"></span>Matrículas abiertas · Nuevo ciclo 2026</span>
+        <h1>Aprende un idioma. <span class="grad-text">Cambia tu futuro.</span></h1>
+        <p class="lead-hero">
+          Seis idiomas, docentes certificados y modalidades flexibles. El Centro de Idiomas de la
+          Universidad Continental te prepara para estudiar, trabajar y viajar por el mundo.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#contacto" class="btn btn-brand btn-lg">Empieza ahora <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#idiomas" class="btn btn-ghost btn-lg">Explorar idiomas</a>
+        </div>
+        <div class="stats">
+          <div><strong>6</strong><span>Idiomas</span></div>
+          <div><strong>30+</strong><span>Docentes</span></div>
+          <div><strong>10K+</strong><span>Estudiantes</span></div>
+          <div><strong>15</strong><span>Años</span></div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="glass">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <strong>Tu progreso</strong><span class="chip"><i class="bi bi-graph-up-arrow"></i> Nivel B1</span>
+          </div>
+          @for (n of niveles; track n.n) {
+            <div class="bar-row">
+              <div class="d-flex justify-content-between"><span>{{ n.n }}</span><span>{{ n.v }}%</span></div>
+              <div class="bar"><i [style.width.%]="n.v"></i></div>
+            </div>
+          }
+          <div class="saludos">
+            @for (s of saludos; track s) { <span>{{ s }}</span> }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

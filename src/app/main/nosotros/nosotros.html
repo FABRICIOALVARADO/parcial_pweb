@@ -1,0 +1,28 @@
+<section id="nosotros" class="sec">
+  <div class="container">
+    <div class="row align-items-center g-5 mb-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Nosotros</span>
+        <h2 class="h2">Una universidad que habla <span class="grad-text">todos los idiomas.</span></h2>
+      </div>
+      <div class="col-lg-6">
+        <p class="lead-x">
+          El Centro de Idiomas es la unidad académica de la Universidad Continental dedicada a la
+          enseñanza de lenguas extranjeras, con un enfoque comunicativo centrado en el estudiante,
+          práctica real desde la primera clase y certificación por nivel.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      @for (v of valores; track v.t) {
+        <div class="col-md-4">
+          <div class="card-x">
+            <div class="ico"><i class="bi {{ v.icon }}"></i></div>
+            <h3>{{ v.t }}</h3>
+            <p class="mb-0">{{ v.x }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

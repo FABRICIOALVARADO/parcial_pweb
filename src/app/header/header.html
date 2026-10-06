@@ -1,56 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-dark header-nav">
+<nav class="navbar navbar-expand-lg sticky-top nav-glass">
   <div class="container">
-
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <div class="logo-icon">
-        <i class="bi bi-heart-pulse-fill"></i>
-      </div>
-      <div class="ms-2">
-        <span class="brand-name">Doctor Sano</span>
-        <small>Clínica y Salud</small>
-      </div>
+    <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+      @if (logoOk()) {
+        <img src="logo-continental.png" alt="Universidad Continental" class="logo" (error)="logoOk.set(false)">
+      } @else {
+        <span class="wordmark">continental</span>
+      }
+      <span class="sub">Centro de Idiomas</span>
     </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#menuPrincipal">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-label="Abrir menú">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-
-        <li class="nav-item">
-          <a class="nav-link active" href="#inicio">Inicio</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#servicios">Servicios</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#medicos">Médicos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#promociones">Promociones</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#resenas">Reseñas</a>
-        </li>
-
-        <li class="nav-item ms-lg-3">
-          <a class="btn btn-cita" href="#contacto">
-            <i class="bi bi-calendar-check me-2"></i>
-            Solicitar cita
-          </a>
-        </li>
-
+      <ul class="navbar-nav mx-auto">
+        @for (e of enlaces; track e.id) {
+          <li class="nav-item"><a class="nav-link" [href]="'#' + e.id">{{ e.t }}</a></li>
+        }
       </ul>
+      <a class="btn btn-brand btn-sm" href="#contacto">Matricúlate <i class="bi bi-arrow-right ms-1"></i></a>
     </div>
-
   </div>
 </nav>

@@ -1,0 +1,3 @@
+Guarda aqui el logo de la Universidad Continental con el nombre exacto:
+logo-continental.png
+(fondo transparente, preferible). Si no existe, la web muestra un logotipo de texto.

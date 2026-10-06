@@ -1,87 +1,40 @@
 <footer class="footer" id="footer">
-
   <div class="container">
-    <div class="row g-4">
-
+    <div class="row g-5">
       <div class="col-lg-5">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <i class="bi bi-heart-pulse-fill"></i>
-          </div>
-
-          <div>
-            <h3>Doctor Sano</h3>
-            <span>Clínica y Salud</span>
-          </div>
-        </div>
-
-        <p class="footer-description">
-          Somos una clínica comprometida con brindar atención médica
-          profesional, cercana y de calidad para nuestros pacientes.
-        </p>
-
-        <div class="social-links">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-whatsapp"></i></a>
-          <a href="#"><i class="bi bi-envelope"></i></a>
+        @if (logoOk()) {
+          <img src="logo-continental.png" alt="Universidad Continental" class="logo" (error)="logoOk.set(false)">
+        } @else {
+          <span class="wordmark">continental</span>
+        }
+        <p class="desc">Centro de Idiomas de la Universidad Continental. Formamos personas con competencias en idiomas extranjeros, con docentes certificados y metodologías activas.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/51999999999" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" aria-label="Correo"><i class="bi bi-envelope"></i></a>
         </div>
       </div>
-
-
       <div class="col-6 col-lg-2">
-        <h4>Clínica</h4>
-
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#medicos">Médicos</a>
-        <a href="#promociones">Promociones</a>
+        <h4>Navegación</h4>
+        <a href="#nosotros">Nosotros</a><a href="#niveles">Niveles</a><a href="#docentes">Docentes</a><a href="#comunidad">Comunidad</a>
       </div>
-
-
       <div class="col-6 col-lg-2">
-        <h4>Servicios</h4>
-
-        <a href="#servicios">Cardiología</a>
-        <a href="#servicios">Pediatría</a>
-        <a href="#servicios">Traumatología</a>
-        <a href="#servicios">Oftalmología</a>
+        <h4>Idiomas</h4>
+        <a href="#idiomas">Inglés</a><a href="#idiomas">Portugués</a><a href="#idiomas">Italiano</a><a href="#idiomas">Francés</a>
       </div>
-
-
       <div class="col-lg-3">
         <h4>Contacto</h4>
-
-        <div class="footer-contact">
-          <i class="bi bi-geo-alt-fill"></i>
-          <span>Av. Salud 123, Huancayo</span>
-        </div>
-
-        <div class="footer-contact">
-          <i class="bi bi-telephone-fill"></i>
-          <span>+51 999 999 999</span>
-        </div>
-
-        <div class="footer-contact">
-          <i class="bi bi-envelope-fill"></i>
-          <span>contacto@doctorsano.com</span>
-        </div>
+        <p><i class="bi bi-geo-alt-fill"></i>Av. San Carlos 1980, Huancayo</p>
+        <p><i class="bi bi-telephone-fill"></i>+51 999 999 999</p>
+        <p><i class="bi bi-envelope-fill"></i>idiomas@continental.edu.pe</p>
       </div>
-
     </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-      <p>
-        © 2026 Doctor Sano. Todos los derechos reservados.
-      </p>
-
-      <p>
-        Atención médica con compromiso y confianza.
-      </p>
+    <div class="bottom">
+      <span>© {{ anio }} Universidad Continental – Centro de Idiomas. Todos los derechos reservados.</span>
+      <span>Idiomas que abren puertas.</span>
     </div>
-
   </div>
-
 </footer>
+
+<a class="wsp" href="https://wa.me/51999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>

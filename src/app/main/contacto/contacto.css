@@ -1,0 +1,9 @@
+:host { display: block; }
+.cta { border-radius: 28px; padding: 64px 52px; color: #fff; background: radial-gradient(60% 90% at 100% 0%, rgba(168, 85, 247, .6), transparent 70%), #12072a; }
+.eyebrow.light { color: #c4b5fd; }
+.lead-cta { color: #d9ccf5; font-size: 18px; line-height: 1.7; }
+.formbox { background: #fff; color: var(--ink); border-radius: 20px; padding: 28px; box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .5); }
+.form-label { font-size: 13px; font-weight: 600; color: var(--ink-2); }
+.form-select { border-radius: 12px; padding: 11px 14px; border-color: var(--line); }
+.form-select:focus { border-color: var(--p5); box-shadow: 0 0 0 4px rgba(124, 58, 237, .15); }
+@media (max-width: 767px) { .cta { padding: 40px 24px; } }
